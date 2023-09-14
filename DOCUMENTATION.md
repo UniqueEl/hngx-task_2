@@ -1,6 +1,3 @@
-Certainly, here's an updated version of the documentation that includes known limitations, assumptions, and instructions for setting up and deploying the Node.js Person CRUD API:
-
-```markdown
 # Node.js Person CRUD API
 
 This Node.js application provides a basic CRUD (Create, Read, Update, Delete) API for managing persons. It uses Express.js for handling HTTP requests, Mongoose for connecting to a MongoDB database, and includes the following endpoints:
