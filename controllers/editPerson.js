@@ -9,7 +9,7 @@ router.put('/:id', async (req, res) => {
         let { id } = req.params;
         const newName = req.body.name;
 
-        if (!newName) {
+        if (!newName || typeof newName !== 'object') {
             return res.status(400).json({
                 message: 'a new Name is required'
             });

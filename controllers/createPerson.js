@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
         // grabbing the person object from the request body
         let {name} = req.body;
         // check if the person object is of valid type
-        if (!name) {
+        if (!name || typeof name !== 'string') {
             return res.status(400).json({message: 'Invalid name provided. Please enter a name of type String'})
         };
         // create a new person object    
